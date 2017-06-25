@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<package name="com.hdg.vo"/>
+	</typeAliases>
+	
+	<mappers>
+		<!-- <mapper resource="com/hdg/vo/House.xml"/>
+		<mapper resource="com/hdg/vo/Owner.xml"/> -->
+		<!-- <package name="com.hdg.vo"/> -->
+		<mapper resource="com/hdg/vo/Province.xml"/>
+		<mapper resource="com/hdg/vo/City.xml"/>
+		<mapper resource="com/hdg/vo/Area.xml"/>
+	</mappers>
+</configuration>

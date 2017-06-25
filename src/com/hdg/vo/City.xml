@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hdg.dao.AddressDao">
+	<select id="getCitys" resultType="City" parameterType="String">
+		SELECT
+			city.id ID,
+			city.cityid cityId,
+			city.city cityName,
+			city.provinceid provinceId
+		FROM
+			city
+		<where>
+			provinceid=#{provinceId}
+		</where>
+	</select>
+</mapper>
